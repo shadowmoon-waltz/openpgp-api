@@ -72,7 +72,7 @@ public class OpenPgpAppPreference extends ListPreference {
             }
         }
         
-        setEntries((CharSequence[])names.toArray());
-        setEntryValues((CharSequence[])values.toArray());
+        setEntries(names.toArray(new String[0]));
+        setEntryValues(values.toArray(new String[0]));
     }
 }
