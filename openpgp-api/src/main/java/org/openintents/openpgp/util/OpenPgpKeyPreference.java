@@ -24,7 +24,7 @@ import android.content.IntentSender;
 import android.content.res.TypedArray;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.preference.Preference;
+import androidx.preference.Preference;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;

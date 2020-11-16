@@ -1,3 +1,13 @@
+Fork (with only minor changes) of [project of same name](https://github.com/open-keychain/openpgp-api). Changes will be described in this section; other sections are from original readme and may not reflect fork changes.
+
+The license is unchanged (Apache-2.0 License).
+
+Changes to support Android Jetpack preferences. It's DialogPreference is structured differently, so I just ended up making OpenPgpAppPreference a ListPreference without the ability to add legacy OpenPGP providers or suggest installing OpenKeychain.
+
+Also, changes to compile/target sdk version, gradle wrapper version, and android gradle plugin version.
+
+---
+
 # OpenPGP API library
 
 The OpenPGP API provides methods to execute OpenPGP operations, such as sign, encrypt, decrypt, verify, and more without user interaction from background threads. This is done by connecting your client application to a remote service provided by [OpenKeychain](http://www.openkeychain.org) or other OpenPGP providers.
