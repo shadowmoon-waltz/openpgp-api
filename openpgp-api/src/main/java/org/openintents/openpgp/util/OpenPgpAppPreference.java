@@ -39,6 +39,7 @@ public class OpenPgpAppPreference extends ListPreference {
 
     public OpenPgpAppPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
+        setSummaryProvider(ListPreference.SimpleSummaryProvider.getInstance());
         populateAppList();
     }
 
@@ -66,7 +67,7 @@ public class OpenPgpAppPreference extends ListPreference {
                 String packageName = resolveInfo.serviceInfo.packageName;
                 
                 if (!PROVIDER_BLACKLIST.contains(packageName)) {
-                    names.add(String.valueOf(resolveInfo.serviceInfo.loadLabel(getContext().getPackageManager())));
+                    names.add(String.valueOf(resolveInfo.serviceInfo.loadLabel(getContext().getPackageManager())) + " (" + packageName + ")");
                     values.add(packageName);
                 }
             }
