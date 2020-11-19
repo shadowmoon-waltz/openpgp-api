@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/shadowmoon-waltz/openpgp-api-jetpack.svg)](https://jitpack.io/#shadowmoon-waltz/openpgp-api-jetpack)
+
 Fork (with only minor changes) of [openpgp-api](https://github.com/open-keychain/openpgp-api). Changes will be described in this section; other sections are from original readme and may not reflect fork changes.
 
 The license is unchanged (Apache-2.0 License).
@@ -5,6 +7,8 @@ The license is unchanged (Apache-2.0 License).
 Changes to support Android Jetpack preferences for the OpenPGP provider and key preferences. Jetpack's DialogPreference is structured differently, so I just ended up making OpenPgpAppPreference a ListPreference without the ability to add legacy OpenPGP providers and the ability to suggest installing an OpenPGP provider when none are installed.
 
 Also, changes to compile/target sdk version, gradle wrapper version, and android gradle plugin version.
+
+It's not available on jcenter, but it is on Jitpack. Click the Jitpack badge above for more info.
 
 ---
 
